@@ -1,11 +1,54 @@
 patch:
-  style/color_scheme: native
+  style/color_scheme: mac_light
+  style/color_scheme_dark: mac_dark
   style/candidate_list_layout: linear
   style/text_orientation: horizontal
   style/inline_preedit: true
   style/inline_candidate: false
   style/show_paging: false
+  style/memorize_size: true
+  style/mutual_exclusive: false
+  style/translucency: true
   style/font_face: PingFang SC
-  style/font_point: 16
+  style/font_point: 24
+  style/label_font_face: SF Pro Text
   style/label_font_point: 14
-  style/candidate_format: "[label] [candidate] [comment]"
+  style/comment_font_point: 14
+  style/candidate_format: "[label]\u2005[candidate]\u2003"
+  style/corner_radius: 22
+  style/hilited_corner_radius: 17
+  style/border_height: 5
+  style/border_width: 8
+  style/line_spacing: 0
+  style/spacing: 0
+  style/shadow_size: 0
+
+  preset_color_schemes/mac_light:
+    name: macOS 浅色
+    back_color: 0xE6F4F6F7
+    border_color: 0x33000000
+    candidate_text_color: 0x1C1C1C
+    label_color: 0x8A8A8A
+    comment_text_color: 0x8A8A8A
+    text_color: 0x1C1C1C
+    hilited_text_color: 0x1C1C1C
+    hilited_back_color: 0x00000000
+    hilited_candidate_back_color: 0xFF7A00
+    hilited_candidate_text_color: 0xFFFFFF
+    hilited_candidate_label_color: 0xFFFFFF
+    hilited_comment_text_color: 0xFFFFFF
+
+  preset_color_schemes/mac_dark:
+    name: macOS 深色
+    back_color: 0xE62A2A2A
+    border_color: 0x40FFFFFF
+    candidate_text_color: 0xEEEEEE
+    label_color: 0x9A9A9A
+    comment_text_color: 0x9A9A9A
+    text_color: 0xEEEEEE
+    hilited_text_color: 0xEEEEEE
+    hilited_back_color: 0x00000000
+    hilited_candidate_back_color: 0xFF840A
+    hilited_candidate_text_color: 0xFFFFFF
+    hilited_candidate_label_color: 0xFFFFFF
+    hilited_comment_text_color: 0xFFFFFF

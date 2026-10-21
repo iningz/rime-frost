@@ -1,6 +1,5 @@
 patch:
-  schema/dependencies:
-    - melt_eng
+  schema/dependencies: []
 
   switches:
     - name: ascii_mode
@@ -11,6 +10,9 @@ patch:
       states: [ 半角, 全角 ]
     - name: ascii_punct
       states: [ 。，, ．， ]
+    - name: emoji
+      reset: 1
+      states: [ 无表情, 表情 ]
 
   engine/processors:
     - ascii_composer
@@ -31,16 +33,14 @@ patch:
     - punct_translator
     - script_translator
     - table_translator@custom_phrase
-    - table_translator@melt_eng
     - table_translator@cn_en
-    - lua_translator@*force_gc
   engine/filters:
-    - lua_filter@*autocap_filter
-    - lua_filter@*reduce_english_filter
+    - simplifier@emoji
     - simplifier@traditionalize
     - uniquifier
 
-  speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+  speller/alphabet: zyxwvutsrqponmlkjihgfedcba
+  speller/initials: zyxwvutsrqponmlkjihgfedcba
   recognizer/patterns: {}
 
   translator/spelling_hints: 0
