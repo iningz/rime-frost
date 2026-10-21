@@ -34,6 +34,7 @@ patch:
     - script_translator
     - table_translator@custom_phrase
     - table_translator@cn_en
+    - table_translator@personal_en
   engine/filters:
     - simplifier@emoji
     - simplifier@traditionalize
@@ -42,6 +43,14 @@ patch:
   speller/alphabet: zyxwvutsrqponmlkjihgfedcba
   speller/initials: zyxwvutsrqponmlkjihgfedcba
   recognizer/patterns: {}
+
+  personal_en:
+    dictionary: ""
+    user_dict: personal_en
+    db_class: userdb
+    enable_sentence: false
+    enable_completion: false
+    initial_quality: 1
 
   translator/spelling_hints: 0
   translator/always_show_comments: false
