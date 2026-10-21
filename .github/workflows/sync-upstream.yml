@@ -1,0 +1,18 @@
+name: Sync upstream
+
+on:
+  schedule:
+    - cron: "0 20 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    if: github.repository == 'iningz/rime-frost'
+    runs-on: ubuntu-latest
+    steps:
+      - run: gh repo sync "$GITHUB_REPOSITORY" --branch master --source gaboolic/rime-frost
+        env:
+          GH_TOKEN: ${{ github.token }}
