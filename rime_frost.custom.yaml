@@ -1,5 +1,6 @@
 patch:
-  schema/dependencies: []
+  schema/dependencies:
+    - melt_eng
 
   switches:
     - name: ascii_mode
@@ -33,15 +34,19 @@ patch:
     - punct_translator
     - script_translator
     - table_translator@custom_phrase
+    - table_translator@melt_eng
     - table_translator@cn_en
     - table_translator@personal_en
+    - lua_translator@*force_gc
   engine/filters:
+    - lua_filter@*autocap_filter
+    - lua_filter@*reduce_english_filter
     - simplifier@emoji
     - simplifier@traditionalize
     - uniquifier
 
-  speller/alphabet: zyxwvutsrqponmlkjihgfedcba
-  speller/initials: zyxwvutsrqponmlkjihgfedcba
+  speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+  speller/initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   recognizer/patterns: {}
 
   personal_en:

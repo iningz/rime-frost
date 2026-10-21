@@ -3,7 +3,7 @@
 patch:
   style:
     status_message_type: mix
-    candidate_format: "[label] [candidate]"
+    candidate_format: "[label]\u2004[candidate]\u2002"
     candidate_list_layout: linear
     text_orientation: horizontal
     inline_preedit: true
@@ -13,14 +13,15 @@ patch:
     memorize_size: false
     show_paging: false
     alpha: 0.92
-    corner_radius: 13
-    hilited_corner_radius: 11
-    border_height: -2
-    border_width: 0
-    line_spacing: 3
+    corner_radius: 9.8
+    hilited_corner_radius: 8.3
+    surrounding_extra_expansion: -3.05
+    border_height: -6.9
+    border_width: -2.8
+    line_spacing: 0
     spacing: 5
     base_offset: 0
-    shadow_size: 1
+    shadow_size: 0
     font_face: PingFang SC
     font_point: 15.5
     label_font_face: PingFang SC
