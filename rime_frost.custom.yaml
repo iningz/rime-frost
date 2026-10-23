@@ -59,8 +59,7 @@ patch:
 
   translator/spelling_hints: 0
   translator/always_show_comments: false
-  translator/preedit_format:
-    - xform/ //
+  translator/preedit_format: []
   translator/comment_format: []
   translator/contextual_suggestions: true
   translator/max_homophones: 4
