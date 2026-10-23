@@ -29,6 +29,8 @@ patch:
     color_scheme: macos_light
     color_scheme_dark: macos_dark
 
+  app_options: {}
+
   preset_color_schemes:
     macos_light:
       color_space: display_p3

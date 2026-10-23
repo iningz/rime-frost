@@ -4,6 +4,7 @@ patch:
 
   switches:
     - name: ascii_mode
+      reset: 0
       states: [ 中文, 英文 ]
     - name: traditionalization
       states: [ 简体, 繁体 ]
