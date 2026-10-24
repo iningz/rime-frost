@@ -67,4 +67,4 @@ patch:
   translator/max_homophones: 4
 
   grammar:
-    __include: mac_grammar:/grammar?
+    __include: grammar:/grammar?
