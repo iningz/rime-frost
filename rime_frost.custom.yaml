@@ -48,7 +48,8 @@ patch:
 
   speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   speller/initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
-  recognizer/patterns: {}
+  recognizer/patterns:
+    url_2: "^[A-Za-z]+[.].*$"
 
   personal_en:
     dictionary: ""
