@@ -67,8 +67,4 @@ patch:
   translator/max_homophones: 4
 
   grammar:
-    language: wanxiang-lts-zh-hans
-    collocation_max_length: 5
-    collocation_min_length: 2
-    non_collocation_penalty: -4
-    collocation_penalty: -14
+    __include: mac_grammar:/grammar?
