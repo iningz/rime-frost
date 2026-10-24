@@ -65,7 +65,6 @@ patch:
   translator/comment_format: []
   translator/contextual_suggestions: true
   translator/max_homophones: 4
-  translator/max_homographs: 2
 
   grammar:
     language: wanxiang-lts-zh-hans
