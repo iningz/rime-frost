@@ -1,7 +1,6 @@
 patch:
   schema_list:
     - schema: rime_frost_double_pinyin_flypy
-    - schema: rime_frost
   switcher/save_options:
     - ascii_punct
     - traditionalization
