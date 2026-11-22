@@ -31,11 +31,31 @@
 - 日期与时间 rq sj xq dt ts
 - 开启句中任意辅助码 ` 使用说明：[句中任意辅助码](/lua/aux_lookup_filter.lua)  拆分说明：[墨奇辅助码拆分说明](https://moqiyinxing.chunqiujinjing.com/index/mo-qi-yin-xing-shuo-ming/fu-zhu-ma-shuo-ming/mo-qi-ma-chai-fen-shuo-ming)
   ![alt text](others/img/input-liuxingyusamantianji.gif)
+- **逐字辅筛**：先打完整拼音，再按两次反引号。比如输入 ``` liyi``w ```，选「立」后不立即上屏；直接按 `c` 再选「艺」，最后一起上屏「立艺」。每字可加一到两位辅码，退格先删辅码，再退出逐字模式。单反引号的整句辅筛不变。
 - 部件拆字反查 uU
 - unicode字符 U
 - 数字金额大写 R
 - 农历 N
 - 计算器 V
+
+如需改逐字引导键，在对应方案的 `*.custom.yaml` 中加入以下补丁（已有 `patch:` 时合并到里面）：
+
+```yaml
+patch:
+  "frost_aux_filter/char_trigger": "`~"
+```
+
+重新部署后用反引号加波浪号进入逐字模式。首键须是能进入当前组字缓冲的标点（默认可用反引号）。设为 `""` 可禁用逐字模式，不影响单反引号。
+
+### 九宫格笔画
+
+重新部署后，在方案选单中选择 **九宫格笔画**（`rime_frost_stroke_t9`）。按笔顺输入单字：横/提 `h`、竖 `s`、撇 `p`、点/捺 `n`、折 `z`。例如 `szhs` → 中，`nhpn` → 文。可以只输前几笔再选字，不支持通配键或整句组词。九宫格布局由输入法前端提供，Rime 方案只处理这五个按键。
+
+**Android 打包：** 将 `rime_frost_stroke_t9.schema.yaml` 和已有的 `stroke.dict.yaml`、`essay.txt` 放到应用的 Rime 共享数据目录根部；后两者如已随白霜打包，无需复制。方案从 `default.yaml` 读取标点，不依赖反查方案、Lua 或 OpenCC。若应用维护自己的 `schema_list`（包括 `default.custom.yaml` 中覆盖的列表），请追加 `- schema: rime_frost_stroke_t9`，保留原有方案，再部署以生成词典和方案索引。前端应发送小写 ASCII 按键，而不是按键上显示的笔画字符。
+
+笔画码表沿用仓库原有数据，来源和整理者见 [`stroke.dict.yaml`](stroke.dict.yaml) 文件头；[Rime 五笔画上游](https://github.com/rime/rime-stroke) 采用 LGPL-3.0。重新分发时保留码表的来源声明及适用的许可证。
+
+在 Linux 上安装 C++ 编译器和 librime 开发包后，可运行 `bash others/test/frost_stroke_smoke.sh`，在临时目录部署方案并检查笔画输入、前缀候选、退格和选字上屏。
 
 ### 如何安装&配置文件路径
 
@@ -83,6 +103,8 @@
 选择配方（others/recipes/*.recipe.yaml）来进行安装或更新：
 
 - ℞ 安装或更新全部文件 执行 `bash rime-install gaboolic/rime-frost:others/recipes/full`
+
+如果旧的双拼补丁在 `melt_eng.custom.yaml` 或 `radical_pinyin.custom.yaml` 中引用各自的 `*.schema.yaml:/algebra_…`，更新后可分别将引用改为 `melt_eng_algebra:/algebra_…` 和 `radical_pinyin_algebra:/algebra_…`，保留原来的规则名，再重新部署。
 
 ### 无智能模型时的输入效果
 
