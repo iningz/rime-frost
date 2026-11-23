@@ -47,11 +47,33 @@ patch:
 
 重新部署后用反引号加波浪号进入逐字模式。首键须是能进入当前组字缓冲的标点（默认可用反引号）。设为 `""` 可禁用逐字模式，不影响单反引号。
 
+### 十四键全拼
+
+重新部署后，在方案选单中选择 **白霜十四键**（`rime_frost_14key`）。按全拼逐字母输入，同一组的字母共用一个键。方案复用白霜全拼词库，候选注释显示实际拼音，便于区分同码候选。例如 `bugao` 可选「你好」，`zu'ab` 可选「西安」。ASCII 单引号 `'` 可显式分隔音节，不确认候选或上屏。
+
+| 前端按键标签 | 发送给 Rime 的 ASCII 键码 |
+| --- | --- |
+| `QW ER TY UI OP` | `q e t u o` |
+| `AS DF GH JK L` | `a d g j l` |
+| `ZX CV BN M` | `z c b m` |
+| 分词 | `'` |
+
+**前端集成：** 键盘由前端绘制，直接发送表中的键码，不需要在前端枚举拼音。原始输入是键码，预编辑可能显示 Rime 自动插入的音节间隔；候选注释可用来显示该候选的实际拼音。方案不继承二十六键的英文混输、拆字反查和辅码触发器。如已自定义 `schema_list`，追加 `- schema: rime_frost_14key` 后重新部署。
+
+### 十四键双拼
+
+自然码和小鹤双拼也可以使用上表的键位。重新部署后，分别选择 **白霜自然码双拼·十四键**（`rime_frost_double_pinyin_14key`）或 **白霜小鹤双拼·十四键**（`rime_frost_double_pinyin_flypy_14key`）。每个音节仍用两键；例如「你好」在自然码下按 `BN UI GH JK`，在小鹤下按 `BN UI GH CV`。两个方案分别复用原双拼拼写规则与白霜词库，保留候选的实际拼音注释和单引号分词，与原二十六键方案并存。
+
+在 Linux 上安装 C++ 编译器和 librime 开发包后，可运行 `bash others/test/frost_14key_smoke.sh` 检查十四键全拼和两种双拼。
+
 ### 九宫格笔画
 
-重新部署后，在方案选单中选择 **九宫格笔画**（`rime_frost_stroke_t9`）。按笔顺输入单字：横/提 `h`、竖 `s`、撇 `p`、点/捺 `n`、折 `z`。例如 `szhs` → 中，`nhpn` → 文。可以只输前几笔再选字，不支持通配键或整句组词。九宫格布局由输入法前端提供，Rime 方案只处理这五个按键。
+重新部署后，在方案选单中选择 **九宫格笔画**（`rime_frost_stroke_t9`）。按笔顺输入：横/提 `h`、竖 `s`、撇 `p`、点/捺 `n`、折 `z`。例如 `szhs` → 中，`nhpn` → 文，也可以只输前几笔再选字。
 
-**Android 打包：** 将 `rime_frost_stroke_t9.schema.yaml` 和已有的 `stroke.dict.yaml`、`essay.txt` 放到应用的 Rime 共享数据目录根部；后两者如已随白霜打包，无需复制。方案从 `default.yaml` 读取标点，不依赖反查方案、Lua 或 OpenCC。若应用维护自己的 `schema_list`（包括 `default.custom.yaml` 中覆盖的列表），请追加 `- schema: rime_frost_stroke_t9`，保留原有方案，再部署以生成词典和方案索引。前端应发送小写 ASCII 按键，而不是按键上显示的笔画字符。
+- **通配** (`x`)：每字最多用一个通配符，代替任意一笔。例如 `sxhs` 可以找出「中」。
+- **分词** (`'`)：确认当前候选并继续输入下一字，不立即上屏，也不插入撇号。最后选择候选可一次上屏。方案不自动切分未分词的笔画串。
+
+**前端集成：** 需要支持 `Component.Translator` 的 librime-lua。共享数据目录需保留 `rime_frost_stroke_t9.schema.yaml`、`stroke.dict.yaml`、`essay.txt`、`default.yaml` 及 `lua/moqi_stroke.lua` 的原有相对路径。若自定义 `schema_list`，追加 `- schema: rime_frost_stroke_t9` 后重新部署。九宫格由前端绘制，前端应发送上述 ASCII 键，而不是按键上的笔画字符。
 
 笔画码表沿用仓库原有数据，来源和整理者见 [`stroke.dict.yaml`](stroke.dict.yaml) 文件头；[Rime 五笔画上游](https://github.com/rime/rime-stroke) 采用 LGPL-3.0。重新分发时保留码表的来源声明及适用的许可证。
 
