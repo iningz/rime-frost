@@ -4718,3 +4718,372 @@ sort: by_weight
 胖友	pang you	0
 麻溜地	ma liu de	0
 刊文	kan wen	0
+
+# 2026-11-24 新增：知乎热榜热词（时政与人物/科技与交通/金融/体育/影视/地名/社会与教育/常用与网络用语，来自 zhihu_missing_2026-11-24 分词缺失词）
+# 时政与人物
+麻某	ma mou	0
+闻会军	wen hui jun	0
+# 科技与交通
+供风	gong feng	0
+# 金融
+收高	shou gao	0
+# 体育
+罗威	luo wei	0
+万项	wan xiang	0
+克林根	ke lin gen	0
+通卡拉	tong ka la	0
+保三争二	bao san zheng er	0
+# 影视
+纳摩	na mo	0
+# 地名
+古墟	gu xu	0
+藏寨	zang zhai	0
+# 社会与教育
+托班	tuo ban	0
+# 常用与网络用语
+候着	hou zhe	0
+吉列豆蒸	ji lie dou zheng	0
+# 医学与生物
+散瞳药	san tong yao	0
+肠脑轴	chang nao zhou	0
+羊膜卵	yang mo luan	0
+硫磺皂	liu huang zao	0
+盾皮鱼	dun pi yu	0
+真骨鱼	zhen gu yu	0
+刃齿虎	ren chi hu	0
+蚊母树	wen mu shu	0
+鸡枞菌	ji zong jun	0
+升白片	sheng bai pian	0
+止血棉	zhi xue mian	0
+小耳症	xiao er zheng	0
+髋膝踝	kuan xi huai	0
+邻面龋	lin mian qu	0
+耵聍栓	ding ning shuan	0
+捕虫堇	bu chong jin	0
+蔗蟾蜍	zhe chan chu	0
+厌氧性	yan yang xing	0
+
+# 科技与数码
+空键程	kong jian cheng	0
+隔电墙	ge dian qiang	0
+翼尖涡	yi jian wo	0
+馈源舱	kui yuan cang	0
+抗混叠	kang hun die	0
+恒压源	heng ya yuan	0
+波阵面	bo zhen mian	0
+紫电改	zi dian gai	0
+键线式	jian xian shi	0
+指星笔	zhi xing bi	0
+诱蚊灯	you wen deng	0
+助眠仪	zhu mian yi	0
+抗炫光	kang xuan guang	0
+集显版	ji xian ban	0
+文青版	wen qing ban	0
+光线枪	guang xian qiang	0
+拆弹器	chai dan qi	0
+地平仪	di ping yi	0
+声全息	sheng quan xi	0
+列存表	lie cun biao	0
+氟化氙	fu hua xian	0
+基性岩	ji xing yan	0
+直积态	zhi ji tai	0
+轻子数	qing zi shu	0
+高红移	gao hong yi	0
+电弱力	dian ruo li	0
+准稳态	zhun wen tai	0
+非定常	fei ding chang	0
+测年法	ce nian fa	0
+黄经差	huang jing cha	0
+肌源性	ji yuan xing	0
+核意面	he yi mian	0
+土卫七	tu wei qi	0
+坡印廷	po yin ting	0
+
+# 学术与教育
+卡方值	ka fang zhi	0
+特值法	te zhi fa	0
+唯分论	wei fen lun	0
+教培课	jiao pei ke	0
+清北班	qing bei ban	0
+联培生	lian pei sheng	0
+眼保操	yan bao cao	0
+启海话	qi hai hua	0
+莆仙话	pu xian hua	0
+舆服志	yu fu zhi	0
+铜活字	tong huo zi	0
+超忆症	chao yi zheng	0
+坦培拉	tan pei la	0
+峄山碑	yi shan bei	0
+琉特琴	liu te qin	0
+延留音	yan liu yin	0
+兽亚纲	shou ya gang	0
+溶度积	rong du ji	0
+色阶图	se jie tu	0
+蟹工船	xie gong chuan	0
+
+# 金融与保险
+汇缴	hui jiao	0
+开空单	kai kong dan	0
+回售权	hui shou quan	0
+领售权	ling shou quan	0
+柴犬币	chai quan bi	0
+空逼多	kong bi duo	0
+包邮税	bao you shui	0
+孕中险	yun zhong xian	0
+备孕险	bei yun xian	0
+赢利性	ying li xing	0
+
+# 游戏与动漫
+搓招	cuo zhao	0
+混天豹	hun tian bao	0
+通灵板	tong ling ban	0
+异想体	yi xiang ti	0
+奥苏安	ao su an	0
+忍义手	ren yi shou	0
+夜魇方	ye yan fang	0
+少狼主	shao lang zhu	0
+大合萨	da he sa	0
+源石病	yuan shi bing	0
+攻壳车	gong ke che	0
+推凶本	tui xiong ben	0
+群内局	qun nei ju	0
+归票位	gui piao wei	0
+高费牌	gao fei pai	0
+哑鼓垫	ya gu dian	0
+玩乙女	wan yi nv	0
+亥伯龙	hai bo long	0
+
+# 历史与考古
+兴隆洼	xing long wa	0
+放马滩	fang ma tan	0
+轮台诏	lun tai zhao	0
+土佐藩	tu zuo fan	0
+波尼族	bo ni zu	0
+怯薛歹	qie xue dai	0
+绰斯甲	chuo si jia	0
+冥古宙	ming gu zhou	0
+流石滩	liu shi tan	0
+穹甲	qiong jia	0
+清弓	qing gong	0
+辛达族	xin da zu	0
+凡雅族	fan ya zu	0
+帖勒瑞	tie lei rui	0
+
+# 品牌与机构
+猫途鹰	mao tu ying	0
+政务司	zheng wu si	0
+食安法	shi an fa	0
+开卡礼	kai ka li	0
+
+# 生活与网络
+丑萌	chou meng	0
+甜糯	tian nuo	0
+冷榨	leng zha	0
+浓醇	nong chun	0
+狮群	shi qun	0
+颈窝	jing wo	0
+假洋牌	jia yang pai	0
+白嫖怪	bai piao guai	0
+大飒蜜	da sa mi	0
+美漫迷	mei man mi	0
+大棋党	da qi dang	0
+洋芋粑	yang yu ba	0
+枣花酥	zao hua su	0
+蒸鹿尾	zheng lu wei	0
+挡沙墙	dang sha qiang	0
+隔烟屏	ge yan ping	0
+哨戒炮	shao jie pao	0
+筒形拱	tong xing gong	0
+圆棒榫	yuan bang sun	0
+救生毯	jiu sheng tan	0
+分模线	fen mo xian	0
+行李厢	xing li xiang	0
+摇表器	yao biao qi	0
+补光量	bu guang liang	0
+丢球权	diu qiu quan	0
+热噪点	re zao dian	0
+低半档	di ban dang	0
+大羊驼	da yang tuo	0
+小灰人	xiao hui ren	0
+干金酒	gan jin jiu	0
+执裁	zhi cai	0
+玻纤箭	bo xian jian	0
+面筐	mian kuang	0
+产检费	chan jian fei	0
+
+# 2026-11-24 新增：MNBVC 知乎语料新词（2 字词，共 94 词）
+# 医学与生物
+踝部	huai bu	0
+穴兔	xue tu	0
+雌蚊	ci wen	0
+猫瘟	mao wen	0
+耳螨	er man	0
+痘肌	dou ji	0
+痰检	tan jian	0
+泵血	beng xue	0
+氧供	yang gong	0
+屈髋	qu kuan	0
+伸髋	shen kuan	0
+谷饲	gu si	0
+草饲	cao si	0
+# 科技与数码
+锐捷	rui jie	0
+截幅	jie fu	0
+预燃	yu ran	0
+氘氚	dao chuan	0
+氦闪	hai shan	0
+熵值	shang zhi	0
+低熵	di shang	0
+锂矿	li kuang	0
+矿企	kuang qi	0
+厚釜	hou fu	0
+钢弦	gang xian	0
+# 学术与教育
+港硕	gang shuo	0
+蹭课	ceng ke	0
+圆唇	yuan chun	0
+汉匈	han xiong	0
+嬴姓	ying xing	0
+姒姓	si xing	0
+# 金融与保险
+妖债	yao zhai	0
+留抵	liu di	0
+募投	mu tou	0
+# 游戏与动漫
+圣树	sheng shu	0
+灵灾	ling zai	0
+龙吼	long hou	0
+侧闪	ce shan	0
+溜鬼	liu gui	0
+龙狙	long ju	0
+骗氪	pian ke	0
+盲操	mang cao	0
+# 品牌与机构
+叠纸	die zhi	0
+美柚	mei you	0
+洁碧	jie bi	0
+蜂花	feng hua	0
+虎嗅	hu xiu	0
+# 生活与网络
+皇汉	huang han	0
+锈色	xiu se	0
+打碟	da die	0
+鸡冻	ji dong	0
+烂牌	lan pai	0
+服盆	fu pen	0
+陪娃	pei wa	0
+夜骑	ye qi	0
+桌板	zhuo ban	0
+抗揍	kang zou	0
+减档	jian dang	0
+铁汁	tie zhi	0
+豆馅	dou xian	0
+冰饮	bing yin	0
+嘴欠	zui qian	0
+粗剪	cu jian	0
+棚拍	peng pai	0
+炭包	tan bao	0
+伞绳	san sheng	0
+弹舌	tan she	0
+耻感	chi gan	0
+耽改	dan gai	0
+旋盖	xuan gai	0
+撇捺	pie na	0
+麦饼	mai bing	0
+残糖	can tang	0
+铝箭	lv jian	0
+短横	duan heng	0
+冒痘	mao dou	0
+晒青	shai qing	0
+木筷	mu kuai	0
+青芒	qing mang	0
+护胃	hu wei	0
+饼皮	bing pi	0
+酸啤	suan pi	0
+胎宽	tai kuan	0
+跑姿	pao zi	0
+弦枕	xian zhen	0
+弦距	xian ju	0
+扒谱	ba pu	0
+拢烟	long yan	0
+浅烘	qian hong	0
+夹胸	jia xiong	0
+撸铁	lu tie	0
+刮蹭	gua ceng	0
+漆水	qi shui	0
+瑰夏	gui xia	0
+哼鸣	heng ming	0
+
+# 2026-11-24 新增：MNBVC 知乎语料专业术语长尾（3 字词，共 52 词）
+# 科技与数码
+集烟腔	ji yan qiang	0
+叠瓦式	die wa shi	0
+全嵌式	quan qian shi	0
+双风叶	shuang feng ye	0
+缓震囊	huan zhen nang	0
+缓震胶	huan zhen jiao	0
+测控网	ce kong wang	0
+硅氧键	gui yang jian	0
+单翼机	dan yi ji	0
+半加器	ban jia qi	0
+# 医学与生物
+增敏剂	zeng min ji	0
+# 学术与教育
+长英质	chang ying zhi	0
+直翅类	zhi chi lei	0
+侵填体	qin tian ti	0
+异养型	yi yang xing	0
+带绦虫	dai tao chong	0
+金腰燕	jin yao yan	0
+喷发物	pen fa wu	0
+法罗语	fa luo yu	0
+壮侗语	zhuang dong yu	0
+令制国	ling zhi guo	0
+六花阵	liu hua zhen	0
+均输法	jun shu fa	0
+斡罗思	wo luo si	0
+兀鲁斯	wu lu si	0
+水达达	shui da da	0
+盐运司	yan yun si	0
+大司乐	da si yue	0
+路德教	lu de jiao	0
+提坦神	ti tan shen	0
+新阴流	xin yin liu	0
+全共斗	quan gong dou	0
+# 金融与保险
+差离值	cha li zhi	0
+值博率	zhi bo lv	0
+# 游戏与动漫
+绯想天	fei xiang tian	0
+拔刀斋	ba dao zhai	0
+猎命师	lie ming shi	0
+歼星炮	jian xing pao	0
+超曲速	chao qu su	0
+# 社会与机构
+公参民	gong can min	0
+渔业部	yu ye bu	0
+拆车匠	chai che jiang	0
+# 生活与网络
+残糖量	can tang liang	0
+低粘度	di nian du	0
+长尖领	chang jian ling	0
+信销票	xin xiao piao	0
+寄物柜	ji wu gui	0
+老球痞	lao qiu pi	0
+男唱见	nan chang jian	0
+铸剑坊	zhu jian fang	0
+减时线	jian shi xian	0
+增时线	zeng shi xian	0
+
+# 2026-11-24 补录：高置信度固定搭配（含虚词但已成词）
+氘和氚	dao he chuan	0
+拽了拽	zhuai le zhuai	0
+锂铍硼	li pi peng	0
+慨而慷	kai er kang	0
+
+# 2026-11-24 补录：高置信度固定搭配（续）
+咂了咂	za le za	0
+捅了捅	tong le tong	0
+扭了扭	niu le niu	0
+铍和硼	pi he peng	0
+碳和氮	tan he dan	0
